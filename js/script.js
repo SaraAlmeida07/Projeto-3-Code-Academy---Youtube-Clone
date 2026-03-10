@@ -2,7 +2,7 @@ const botaoTresPontos = document.getElementById('abrir-mdp');
 const modal = document.getElementById('modal-pontinhos');
 const btnInscricao = document.getElementById('botao-inscricao');
 const statusSalvo = localStorage.getItem('statusInscricao');
-
+const btnMenu = document.querySelector('.menu-toggle');
 
 //Modal Três pontinhos//
 botaoTresPontos.addEventListener('click', function () {
@@ -37,3 +37,7 @@ if (statusSalvo === 'inscrito') {
     btnInscricao.style.backgroundColor = "#303030";
     btnInscricao.style.color = "#ffffff";
 }
+
+btnMenu.addEventListener('click', () => {
+    document.body.classList.toggle('sidebar-expanded');
+});
