@@ -1,0 +1,9 @@
+
+
+services:
+  youtube-clone:
+    build: .
+    ports:
+      - "8080:80"
+    volumes:
+      - ./src:/usr/share/nginx/html # Opcional: faz o site atualizar sem precisar de novo build

@@ -3,6 +3,7 @@ const modal = document.getElementById('modal-pontinhos');
 const btnInscricao = document.getElementById('botao-inscricao');
 const statusSalvo = localStorage.getItem('statusInscricao');
 const btnMenu = document.querySelector('.menu-toggle');
+const iconeInscricao = document.querySelector('.icon-inscricao');
 
 //Modal Três pontinhos//
 botaoTresPontos.addEventListener('click', function () {
@@ -40,4 +41,6 @@ if (statusSalvo === 'inscrito') {
 
 btnMenu.addEventListener('click', () => {
     document.body.classList.toggle('sidebar-expanded');
+
 });
+
