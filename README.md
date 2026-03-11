@@ -1,4 +1,4 @@
-# 📺 YouTube Clone - Projeto Final (Replication)
+# 📺 YouTube Clone - Projeto Code Academy 
 ---
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
@@ -16,7 +16,7 @@ Este projeto consiste na replicação do layout de canal do YouTube proposto pel
 ### 🎨 Layout e Estilização
 - [x] **Grid System**: Organização das seções de vídeos e alinhamento do conteúdo principal com fluidez.
 - [x] **Flexbox**: Aplicado em todas as barras de navegação (header, sub-nav e footer) e para centralização de elementos.
-- [x] **Responsividade Total**: Layout adaptável para Desktop (sidebar fixa/retrátil), Tablet e Mobile (header simplificado e navegação inferior).
+- [x] **Responsividade**: Layout adaptável para Desktop (sidebar fixa/retrátil), Tablet e Mobile (header simplificado e navegação inferior).
 
 ### ⚙️ Funcionalidades JavaScript
 - [x] **Navegação Lateral Expansível**: Menu hambúrguer que alterna entre os estados compacto e expandido (Desktop).
@@ -38,7 +38,7 @@ Para visualizar a aplicação rodando via Docker em segundos:
 
 ```bash
 docker compose up --build
-
+```
 3. Abra o navegador e acesse: http://localhost:8080
 
 👤 Aluno(a): Sara Pereira de Almeida
