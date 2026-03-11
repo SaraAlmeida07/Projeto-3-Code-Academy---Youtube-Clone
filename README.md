@@ -40,6 +40,7 @@ Para visualizar a aplicação rodando via Docker em segundos:
 docker compose up --build
 ```
 3. Abra o navegador e acesse: http://localhost:8080
+----
 
 👤 Aluno(a): Sara Pereira de Almeida
 
