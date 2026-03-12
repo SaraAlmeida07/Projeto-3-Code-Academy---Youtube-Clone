@@ -17,16 +17,16 @@ modal.addEventListener('click', function () {
 });
 
 btnInscricao.addEventListener('click', function () {
-    if (btnInscricao.innerText === "Subscribe") {
+    if (btnInscricao.innerText === "Inscrever-se") {
 
-        btnInscricao.innerText = "Subscribed";
+        btnInscricao.innerText = "Inscrito";
         btnInscricao.style.backgroundColor = "#303030";
         btnInscricao.style.color = "#ffffff";
         localStorage.setItem('statusInscricao', 'inscrito');
 
     } else {
 
-        btnInscricao.innerText = "Subscribe";
+        btnInscricao.innerText = "Inscrever-se";
         btnInscricao.style.backgroundColor = "#ffffff"; // Volta para o branco original
         btnInscricao.style.color = "#0f0f0f";
         localStorage.setItem('statusInscricao', 'nao-inscrito');
@@ -34,7 +34,7 @@ btnInscricao.addEventListener('click', function () {
 });
 
 if (statusSalvo === 'inscrito') {
-    btnInscricao.innerText = "Subscribed";
+    btnInscricao.innerText = "Inscrito";
     btnInscricao.style.backgroundColor = "#303030";
     btnInscricao.style.color = "#ffffff";
 }
@@ -43,4 +43,5 @@ btnMenu.addEventListener('click', () => {
     document.body.classList.toggle('sidebar-expanded');
 
 });
+
 

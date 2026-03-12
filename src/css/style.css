@@ -217,8 +217,8 @@ h1 {
 }
 
 .perfil-canal-miniatura {
-  width: 50px;
-  height: 50px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -295,11 +295,10 @@ h1 {
 .video-details {
   display: grid;
   grid-template-columns: 36px 1fr 24px;
-
   grid-template-areas: "foto info opcoes";
 
+  margin-top: 8px;
   gap: 12px;
-
   align-items: start;
   /* Alinha pelo topo para o título ficar no lugar certo */
   padding: 12px 0;
@@ -322,13 +321,19 @@ h1 {
   display: flex;
   flex-direction: column;
 }
+.box-video {
+  transition: transform 0.2s;
+}
+.box-video:hover {
+  transform: scale(1.03);
+}
 
 .thumbnail {
   width: 100%;
   aspect-ratio: 16 / 9;
   /* Proporção padrão de vídeo */
   object-fit: cover;
-  border-radius: 12px;
+  border-radius: 10px;
   margin-bottom: 12px;
 }
 
@@ -489,6 +494,16 @@ h1 {
 
   .header-actions {
     gap: 20px;
+  }
+
+  .logo {
+  display: flex;
+  align-items: center;
+  gap: 5px; 
+  }
+
+  .logo-img {
+    height: 20px;
   }
 
   .mobile-only {
@@ -706,11 +721,11 @@ h1 {
 
   .feed {
     width: 100%;
-    max-width: 1284px;
+    max-width: 1280px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    padding: 0 16px;
+    padding: 0 24px;
     /* Respiro lateral interno */
   }
 
@@ -838,9 +853,14 @@ h1 {
   }
 
   .video-text h4 {
-    font-size: 1rem;
+    font-size: 0.95rem;
+    font-weight: 600;
     line-height: 1.4;
-    margin-bottom: 4px;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 
   .video-text p {
@@ -899,9 +919,8 @@ h1 {
 
   .video-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
-    /* Um pouco menores para caberem mais */
-    gap: 16px;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap:24px 16px;
   }
 
 }
